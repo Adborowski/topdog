@@ -4,7 +4,7 @@
 
         <?php include("components/comp-logotype/comp-logotype.php") ?>
 
-        <h1>For demo purposes, please use the default 'adam' account</h1>
+        <h1>For demo purposes, please use the default 'adam' account.</h1>
         <input class="txtInput" id="txtUsername" placeholder="Your Username" value="adam"></input>
         <input class="txtInput" type="password" id="txtPassword" placeholder="Your Password" value="123456789"></input>
                 

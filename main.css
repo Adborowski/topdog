@@ -299,15 +299,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-}
-.dogCard .dogPictureFrame img {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .dogCard .dogPictureFrame img {
-    height: unset;
-    width: 100%;
-  }
+  background-position: center;
+  background-size: cover;
 }
 .dogCard .dogName {
   font-size: 12px;
@@ -735,6 +728,14 @@ body {
   background-color: #f0f0fa;
 }
 
+h1 {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
 .infoPixel {
   position: absolute;
   top: 0;
@@ -893,26 +894,26 @@ a:hover {
 }
 .fadeIn {
   opacity: 1;
-  -webkit-transition: 2s ease-in;
-  -moz-transition: 2s ease-in;
-  -o-transition: 2s ease-in;
-  transition: 2s ease-in;
+  -webkit-transition: 0.25s ease-in;
+  -moz-transition: 0.25s ease-in;
+  -o-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
   /* Use the animation name with additional properties */
   animation-name: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 0.25s;
   animation-iteration-count: 1;
   animation-direction: forward;
 }
 
 .fadeOut {
   opacity: 0;
-  -webkit-transition: 2s ease-in;
-  -moz-transition: 2s ease-in;
-  -o-transition: 2s ease-in;
-  transition: 2s ease-in;
+  -webkit-transition: 0.25s ease-in;
+  -moz-transition: 0.25s ease-in;
+  -o-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
   /* Use the animation name with additional properties */
   animation-name: fadeOut;
-  animation-duration: 2s;
+  animation-duration: 0.25s;
   animation-iteration-count: 1;
   animation-direction: forward;
 }
