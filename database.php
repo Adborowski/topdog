@@ -6,7 +6,7 @@ try{
 
   $sUserName = 'root';
   $sPassword = 'root';
-  $sConnection = "mysql:host=104.248.246.24; dbname=dogs; charset=utf8mb4";
+  $sConnection = "mysql:host=localhost; dbname=dogs; charset=utf8mb4";
 
   $aOptions = array(
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
