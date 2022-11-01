@@ -22,10 +22,11 @@ $font-family-sans-serif:
   // Android
   "Roboto",
   // Basic web fallback
-  "Helvetica Neue", Arial, sans-serif,
+  "Helvetica Neue",
+  Arial, sans-serif,
   // Emoji fonts
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-
+  "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 $padding-component: 10px;
 $border-radius-large: 10px;
@@ -64,16 +65,16 @@ $color-primary-light-2: lighten($color-primary, 15%);
 $color-primary-light-3: lighten($color-primary, 20%);
 $color-primary-light-4: lighten($color-primary, 25%);
 
-$color-secondary: #626bb0;  
-$color-secondary-dark-1: darken( $color-secondary, 10% );
-$color-secondary-dark-2: darken( $color-secondary, 30% );
-$color-secondary-dark-3: darken( $color-secondary, 50% );
+$color-secondary: #626bb0;
+$color-secondary-dark-1: darken($color-secondary, 10%);
+$color-secondary-dark-2: darken($color-secondary, 30%);
+$color-secondary-dark-3: darken($color-secondary, 50%);
 
 $color-secondary-light-1: lighten($color-secondary, 10%);
 $color-secondary-light-2: lighten($color-secondary, 20%);
 $color-secondary-light-3: lighten($color-secondary, 30%);
 
-$color-neutral: rgba(240,240,250,1);
+$color-neutral: rgba(240, 240, 250, 1);
 $color-neutral-dark-1: darken($color-neutral, 10%);
 $color-neutral-dark-2: darken($color-neutral, 20%);
 $color-neutral-dark-3: darken($color-neutral, 30%);
@@ -84,6 +85,6 @@ $border-primary: 1px solid $color-primary;
 $border-secondary: 1px solid $color-secondary;
 $border-neutral: 1px solid $color-neutral;
 
-$color-neutral-2: rgba(40,40,40,1);
+$color-neutral-2: rgba(40, 40, 40, 1);
 
 $fade-speed: 2s;
