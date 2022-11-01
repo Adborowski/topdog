@@ -5,7 +5,7 @@ error_reporting(0);
 try{
 
   $sUserName = 'root';
-  $sPassword = 'root';
+  $sPassword = '';
   $sConnection = "mysql:host=localhost; dbname=dogs; charset=utf8mb4";
 
   $aOptions = array(
