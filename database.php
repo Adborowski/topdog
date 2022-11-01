@@ -16,7 +16,7 @@ try{
   $db = new PDO( $sConnection, $sUserName, $sPassword, $aOptions );
 
 }catch( PDOException $e){
-  echo $e->getMessage();
+  echo $e;
   exit();
 }
 
