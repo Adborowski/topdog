@@ -1,0 +1,40 @@
+#popupModal{
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.3s all;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -500;
+    opacity: 0;
+    // padding-bottom: $space-navbar-height;
+}
+
+#popupFrame{
+    width: 300px;
+    padding: $space-small;
+    // border: $border-primary;
+    background-color: $color-neutral-dark-1;
+    border-radius: $border-radius-large;
+    margin: auto;
+}
+
+#popupTitle{
+    text-align: center;
+    font-weight: $font-weight-2;
+    font-size: $font-size-1;
+}
+
+#popupContent{
+    margin: $space-medium;
+    text-align: center;
+}
+
+#popupControls{
+
+
+}

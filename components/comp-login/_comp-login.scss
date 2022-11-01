@@ -1,0 +1,24 @@
+@import "../../assets/_vars";
+
+#mainLogin{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#compLogin.compFrame{
+    // background-color: $color-primary;
+    width: 310px; 
+    margin: auto;
+
+    a{
+        color: $color-secondary;
+    }
+}
+
+#btnLogin{
+    margin-top: $space-medium;
+}

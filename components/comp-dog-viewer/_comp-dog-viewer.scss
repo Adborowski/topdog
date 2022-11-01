@@ -1,0 +1,191 @@
+#dogViewer{
+    // width: 100%;
+    // padding: $space-micro;
+    margin: $space-small;
+    background-color: $color-neutral;
+    display: grid;
+    gap: $space-small;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    @media screen and (min-width: 450px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 576px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1400px){
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.dogCard{
+    background-color: $color-secondary !important;
+    // border: $border-secondary;
+    padding: $space-small !important;
+    // margin: $space-micro;
+    display: grid;
+    grid-template-rows: 5fr 4fr 30px;
+    gap: $space-micro;
+
+    @media screen and (min-width: 250px){
+        grid-template-rows: 2fr 3fr 30px;
+    }
+
+    @media screen and (min-width: 300px){
+        grid-template-rows: 1fr 1fr 30px;
+    }
+
+    @media screen and (min-width: 400px){
+        grid-template-rows: 5fr 4fr 30px;
+    }
+
+    @media screen and (min-width: 450px){
+        grid-template-rows: 4fr 3fr 30px;
+    }
+
+    @media screen and (min-width: 576px){
+        grid-template-rows: 1fr 1fr 30px;
+    }
+
+    @media screen and (min-width: 650px){
+        // grid-template-rows: 5fr 4fr 30px;
+    }
+
+    @media screen and (min-width: 800px){
+        grid-template-rows: 6fr 4fr 30px;
+    }
+
+    @media screen and (min-width: 1000px){
+        grid-template-rows: 2fr 2fr 50px;
+    }
+
+    @media screen and (min-width: 1100px){
+        grid-template-rows: 4fr 3fr 50px;
+    }
+
+    @media screen and (min-width: 1200px){
+        grid-template-rows: 1fr 1fr 50px;
+    }
+    
+    @media screen and (min-width: 1350px){
+        grid-template-rows: 4fr 3fr 50px;
+    }
+
+    @media screen and (min-width: 1400px){
+        grid-template-rows: 4fr 4fr 50px;
+    }
+
+    @media screen and (min-width: 1500px){
+        grid-template-rows: 5fr 4fr 50px;
+    }
+
+    .dogPictureFrame{
+        border-radius: $border-radius-small;
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    
+        img{
+            
+            // transform: scale(1.7);
+            width: 100%;
+            // experimental but working css to center oversized image in tiny container (use for very skinny cards)
+            // position: absolute;
+            // top: -200px;
+            // bottom: -200px;
+            // left: -200px;
+            // right: -200px;
+            // margin: auto;
+
+            @media screen and (min-width: 400px){
+            // transform: scale(1.2);
+            }
+
+            @media screen and (min-width: 451px){
+            
+            }
+
+            @media screen and (min-width: 768px){
+                // OG
+                height: unset;
+                width: 100%;
+                // width: auto;
+                // height: 100%;
+
+            } // end of @media
+        } // end of img
+    } // end of .dogPictureFrame
+
+    .dogName{
+        font-size: $font-size-0;
+        color: $color-neutral-2;
+        color: $color-neutral;
+        font-weight: $font-weight-2;
+        padding-bottom: $space-small;
+        padding-top: $space-small;
+
+        @media screen and (min-width: 450px){
+            font-size: $font-size-2;
+        }
+    }
+
+    .dogScore{
+        color: $color-neutral-2;
+        color: $color-neutral;
+        font-size: $font-size-0;
+        margin-bottom: $space-small;
+    }
+
+    .dogDescription{
+        font-size: $font-size-0;
+        color: $color-neutral-2;
+        color: $color-neutral;
+        padding-bottom: $space-small;
+
+        @media screen and (min-width: 450px){
+            font-size: $font-size-1;
+        }
+    }
+
+    .dogCardButtons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $space-micro;
+        position: relative;
+        // background-color: pink !important;
+
+        .btn{
+            padding: 0;
+            font-size: $font-size-0;
+            height: 100% !important;
+            // height: $space-large;
+    
+            @media screen and (min-width: 768px){
+                font-size: $font-size-1;
+            }
+        }
+
+        .btn.btn-add-to-favorites{
+            font-family: $font-family-sans-serif;
+            font-size: $font-size-1;
+            color: $color-neutral-dark-1;
+
+        }
+
+        .btn.btn-add-to-favorites.active{
+            color: crimson;
+        }
+    } // end of .dogCardButtons    
+}

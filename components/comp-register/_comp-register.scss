@@ -1,0 +1,41 @@
+@import "../../assets/_vars";
+
+#mainRegister{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#compRegister.compFrame{
+    background-color: $color-secondary;
+    width: 310px; 
+    margin: auto;
+
+    .btn-primary{
+        background-color: $color-primary;
+        color: black;
+    }
+
+    .logoFrame{
+        background-color: $color-secondary !important;
+
+        .imgLogo{
+            filter: invert(1);
+        }
+    }
+
+    .appNameFrame{
+        color: white !important;
+    }
+
+    a{
+        color: white;
+    }
+}
+
+#btnRegister{
+    margin-top: $space-medium;
+}

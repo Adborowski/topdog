@@ -1,0 +1,35 @@
+#comp-add-dog{
+    background-color: $color-secondary;
+    margin: $space-small;
+    padding: $space-small;
+    border-radius: $border-radius-small;
+    // max-width: 1000px;
+    // margin-left: auto + $space-small;
+    // margin-right: auto + $space-small;
+}
+
+#btn-submit-new-dog{
+    margin-top: $space-small;
+}
+
+.labelNewDogInfo{
+    color: white;
+}
+
+#newDogImage{
+    // border: 10px solid red;
+    width: 100%;
+}
+
+#imagePreviewFrame{
+    width: 0px;
+    height: 0px;
+    border-radius: $border-radius-small;
+    transition: 0.3s all;
+    margin-top: $space-small;
+
+    img{
+        width: 100%;
+        transition: 0.3s all;
+    }
+}

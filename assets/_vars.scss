@@ -1,0 +1,89 @@
+// font-family: basic-sans, sans-serif;
+
+// Basic Sans Black
+// font-weight: 900;
+// Basic Sans Bold
+// font-weight: 700;
+// Basic Sans SemiBold
+// font-weight: 600;
+// Basic Sans Regular
+// font-weight: 400;
+// Basic Sans Light
+// font-weight: 300;
+
+// bootstrap's default font stack:
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+
+$padding-component: 10px;
+$border-radius-large: 10px;
+$border-radius-small: 5px;
+
+$space-navbar-height: 70px;
+$space-micro: 5px;
+$space-small: 10px;
+$space-medium: 25px;
+$space-large: 50px;
+$space-extra-large: 100px;
+
+$font-size-0: 12px;
+$font-size-1: 16px;
+$font-size-2: 20px;
+$font-size-3: 24px;
+$font-size-4: 28px;
+$font-size-5: 32px;
+$font-size-6: 36px;
+
+// review this if you change the global font
+$font-weight-1: 300;
+$font-weight-2: 700;
+$font-weight-3: 900;
+
+$color-primary: #f4c06f;
+// $color-primary: #F1CD43;
+// $color-primary: rgba(230, 230, 240, 1);
+// $color-primary: red;
+$color-primary-dark-1: darken($color-primary, 10%);
+$color-primary-dark-2: darken($color-primary, 30%);
+$color-primary-dark-3: darken($color-primary, 50%);
+
+$color-primary-light-1: lighten($color-primary, 10%);
+$color-primary-light-2: lighten($color-primary, 15%);
+$color-primary-light-3: lighten($color-primary, 20%);
+$color-primary-light-4: lighten($color-primary, 25%);
+
+$color-secondary: #626bb0;  
+$color-secondary-dark-1: darken( $color-secondary, 10% );
+$color-secondary-dark-2: darken( $color-secondary, 30% );
+$color-secondary-dark-3: darken( $color-secondary, 50% );
+
+$color-secondary-light-1: lighten($color-secondary, 10%);
+$color-secondary-light-2: lighten($color-secondary, 20%);
+$color-secondary-light-3: lighten($color-secondary, 30%);
+
+$color-neutral: rgba(240,240,250,1);
+$color-neutral-dark-1: darken($color-neutral, 10%);
+$color-neutral-dark-2: darken($color-neutral, 20%);
+$color-neutral-dark-3: darken($color-neutral, 30%);
+
+$color-warning: crimson;
+
+$border-primary: 1px solid $color-primary;
+$border-secondary: 1px solid $color-secondary;
+$border-neutral: 1px solid $color-neutral;
+
+$color-neutral-2: rgba(40,40,40,1);
+
+$fade-speed: 2s;

@@ -1,0 +1,81 @@
+#compLogin, #compRegister{
+
+    .logotypeFrame{
+        // background-color: lightblue;
+        // height: 100px;
+        margin-bottom: $space-medium;
+
+        .logoFrame{
+            // background-color: $color-neutral;
+            border-radius: 100px;
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            // margin-bottom: $space-small;
+            // padding: $space-small;
+            // padding-top: $space-small;
+
+            .imgLogo{
+                height: 100%;
+            }
+        }
+
+        .appNameFrame{
+            font-size: $font-size-3;
+            margin: auto;
+            margin-bottom: $space-medium;
+            // background-color: lightcyan;
+            text-align: center;
+
+            .appName{
+                color: black;
+            }
+        }
+    }
+}
+
+// bear in mind comp-register.scss has its own rulesets for the logo
+#compRegister{
+    .appName{
+        color: white !important;
+    }
+
+}
+
+.moduleNavDesktop{
+
+    // do NOT put any styling for .moduleNavDesktop here
+
+    .logotypeFrame{
+        // background-color: lightgreen;
+        display: grid;
+        grid-template-columns: 50px 100px;
+        grid-gap: $space-small;
+
+        .logoFrame{
+            width: 50px;
+            height: 50px;
+            // padding: $space-micro;
+            // padding-top: $space-micro;
+            // background-color: $color-neutral;
+            border-radius: 100px;
+        }
+
+        .appNameFrame{
+            // background-color: lightpink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: $font-size-2;
+
+            .appName{
+                color: $color-neutral-2 !important;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+
+

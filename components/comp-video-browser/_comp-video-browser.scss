@@ -1,0 +1,135 @@
+// This is based on the #dogViewer
+
+#videoBrowser{
+    // width: 100%;
+    // padding: $space-micro;
+    margin: $space-small;
+    background-color: $color-neutral;
+    display: grid;
+    gap: $space-small;
+    grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    @media screen and (min-width: 450px){
+        // grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 576px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1400px){
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.videoCard{
+    max-width: 100%;
+    background-color: $color-secondary !important;
+    // border: $border-secondary;
+    padding: $space-small !important;
+    // margin: $space-micro;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: $space-micro;
+    border-radius: $border-radius-small;
+
+    @media screen and (min-width: 250px){
+        grid-template-rows: 2fr 3fr;
+    }
+
+    @media screen and (min-width: 300px){
+        grid-template-rows: 4fr 3fr;
+    }
+
+    @media screen and (min-width: 450px){
+        grid-template-rows: 300px 1fr;
+    }
+
+    @media screen and (min-width: 576px){
+        grid-template-rows: 200px 1fr;
+    }
+
+    @media screen and (min-width: 650px){
+        // grid-template-rows: 5fr 4fr 30px;
+    }
+
+    @media screen and (min-width: 800px){
+        grid-template-rows: 300px 1fr;
+    }
+
+    @media screen and (min-width: 1000px){
+        grid-template-rows: 200px 1fr;
+    }
+
+    @media screen and (min-width: 1100px){
+        // grid-template-rows: 4fr 3fr 50px;
+    }
+
+    @media screen and (min-width: 1200px){
+        // grid-template-rows: 1fr 1fr 50px;
+    }
+    
+    @media screen and (min-width: 1350px){
+        // grid-template-rows: 4fr 3fr 50px;
+    }
+
+    @media screen and (min-width: 1400px){
+        // grid-template-rows: 4fr 4fr 50px;
+    }
+
+    @media screen and (min-width: 1500px){
+        // grid-template-rows: 5fr 4fr 50px;
+    }
+
+    .videoFrame{
+        border-radius: $border-radius-small;
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    
+        iFrame{
+            
+            height: 100%;
+            max-width: 100%;
+           
+        } // end of img
+    } // end of .videoPictureFrame
+
+    .videoTitle{
+        font-size: $font-size-0;
+        color: $color-neutral-2;
+        color: $color-neutral;
+        font-weight: $font-weight-2;
+        padding-bottom: $space-small;
+        padding-top: $space-small;
+
+        @media screen and (min-width: 320px){
+            font-size: $font-size-1;
+        }
+
+        @media screen and (min-width: 1000px){
+            font-size: $font-size-2;
+        }
+    }
+
+    .videoDescription{
+        font-size: $font-size-0;
+        color: $color-neutral-2;
+        color: $color-neutral;
+        padding-bottom: $space-small;
+
+        @media screen and (min-width: 450px){
+            // font-size: $font-size-1;
+        }
+    } 
+}

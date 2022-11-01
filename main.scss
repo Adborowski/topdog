@@ -1,0 +1,269 @@
+@import "assets/_vars";
+@import "components/comp-login/_comp-login";
+@import "components/comp-register/_comp-register";
+@import "components/comp-logotype/_comp-logotype";
+@import "components/comp-navigation/_comp-navigation";
+@import "components/comp-dog-viewer/_comp-dog-viewer";
+@import "components/comp-dog-profile/_comp-dog-profile";
+@import "components/comp-questions-human/_comp-questions-human";
+@import "components/comp-favorites/_comp-favorites";
+@import "components/comp-add-dog/_comp-add-dog";
+@import "components/comp-video-browser/_comp-video-browser";
+@import "components/comp-popup/_comp-popup";
+@import "components/comp-user-profile/_comp-user-profile";
+
+*{
+    font-family: basic-sans, sans-serif;
+}
+
+.main{
+
+    background-color: #fafafa;
+    padding: $space-small;
+    // margin: 5px;
+    border-radius: $border-radius-large;
+ 
+}
+
+body{
+    background-color: $color-neutral;
+    // width: 100%; 
+    // overflow-x: hidden;
+}
+
+.infoPixel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+// this is so the span is centered in the button
+.btn{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-general{
+    
+    background-color: $color-primary;
+    cursor: pointer;
+
+}
+
+.btn-neutral{
+    background-color: $color-neutral;
+}
+
+.btn-primary{
+    // width: 200px;
+    height: 40px;
+    background-color: $color-secondary;
+    display:flex;
+    border: none;
+    margin: auto;
+
+    &:hover{
+        background-color: $color-secondary-dark-1;
+    }
+
+    &:active{
+        background-color: $color-secondary-dark-1 !important;
+    }
+}
+
+.btn-primary.active{
+    background-color: $color-secondary-dark-1 !important;
+}
+
+.compFrame{
+    // border: 1px solid black;
+    padding: $space-medium;
+    background-color: $color-primary;
+    border-radius: 10px;
+}
+
+.txtInput{
+    // transition: 0.3s all;
+    padding: $space-small;
+    height: 40px;
+    display:block;
+    width: 100%;
+    margin-bottom: $space-small;
+    border: none;
+    border-radius: $border-radius-small;
+
+    &:focus{
+        // border: 
+        outline: 0;
+    }
+
+}
+
+.txtInput.large{
+    height: 120px;
+}
+
+#boxCopyright{
+    color: $color-neutral;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    left: 10%;
+    z-index: -200;
+}
+
+.questionModule{
+    background-color: $color-secondary;
+    // border: $border-secondary;
+    padding: $space-small;
+    border-radius: $border-radius-large;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    .questionContent{
+        font-size: $font-size-0;
+        padding-left: $space-micro;
+        color: white;
+    }
+
+    .questionControls{
+        // background-color: $color-neutral;
+        // border-radius: $border-radius-small;
+        margin-top: $space-small;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $space-micro;
+
+        .btn-question-control{
+            background-color: $color-neutral;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: $border-radius-small;
+
+            &:hover{
+                // background-color: $color-neutral-dark-1;
+            }
+
+            .buttonLabel{
+                text-align: center;
+                font-size: $font-size-0;
+            }
+        } // end of .btn-question-control
+
+        .btn-question-control.btn-current-answer{
+            background-color: $color-primary;
+
+            // &:hover{
+            //     // background-color: $color-primary-dark-1;
+            // }
+            
+        }
+    } // end of .questionControls
+    
+} // end of .questionModule
+
+#messageCard{
+
+    background-color: $color-secondary;
+    color: $color-neutral;
+    padding: $space-small;
+    margin: $space-small;
+    border-radius: $border-radius-large;
+    text-align: center;
+    // max-width: 500px;
+
+    a{
+        color: $color-neutral;
+        text-decoration: underline;
+        
+    }
+
+}
+
+.frameHeadline{
+
+    // border: 1px solid black;
+    margin: $space-small;
+    margin-bottom: $space-micro;
+    text-align:center;
+    font-size: $font-size-3;
+    font-weight: $font-weight-2;
+
+    .headline{
+
+    }
+
+    &:first-of-type{
+        margin-top: 0;
+    }
+}
+
+
+
+// EXPERIMENTAL 
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .fadeIn{
+    opacity: 1;
+    -webkit-transition: $fade-speed ease-in;
+    -moz-transition: $fade-speed ease-in;
+    -o-transition: $fade-speed ease-in;
+    transition: $fade-speed ease-in;
+    /* Use the animation name with additional properties */
+    animation-name: fadeIn;
+    animation-duration: $fade-speed;
+    animation-iteration-count: 1;
+    animation-direction: forward;
+
+}
+
+.fadeOut{
+    opacity: 0;
+    -webkit-transition: $fade-speed ease-in;
+    -moz-transition: $fade-speed ease-in;
+    -o-transition: $fade-speed ease-in;
+    transition: $fade-speed ease-in;
+    /* Use the animation name with additional properties */
+    animation-name: fadeOut;
+    animation-duration: $fade-speed;
+    animation-iteration-count: 1;
+    animation-direction: forward;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+

@@ -1,0 +1,144 @@
+#boxQuestionsDog{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-small;
+
+    .questionModule{
+
+        padding: 0;
+
+        .questionContent{
+            font-size: $font-size-0;
+            color: white;
+            padding: 0;
+
+            @media screen and (min-width: 768px){
+                // font-size: $font-size-1;
+            }
+        }
+
+        .questionControls{
+            .btn.btn-question-control{
+               .buttonLabel{
+                   font-size: $font-size-0;
+                   @media screen and (min-width: 768px){
+                        font-size: $font-size-1;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 576px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $space-medium;
+    }
+
+    @media screen and (min-width: 1000px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-medium;
+    }
+
+} // end of #boxQuestionsDog
+
+#dogProfile{
+    background-color: $color-secondary;
+    font-size: $font-size-0;
+    margin: $space-small;
+
+    @media screen and (min-width: 1200px){
+        padding: $space-large;
+    }
+}
+
+#dogInformation{
+
+    @media screen and (min-width: 576px){
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        margin-bottom: $space-large;
+    }
+}
+
+#dogTextInformation{
+    
+    @media screen and (min-width: 576px){
+        padding: $space-medium;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px){
+        padding: $space-large;
+    }
+}
+
+#dogProfilePhotoFrame{
+
+    width: 100%;
+    text-align: center;
+
+    img{
+        width: 100%;
+        max-height: 300px;
+        max-width: 300px;
+        border-radius: $border-radius-small;
+    }
+
+    @media screen and (min-width: 576px){
+        text-align:left;
+        width: 300px;
+    }
+}
+
+#dogProfileName{
+    font-size: $font-size-1;
+    font-weight: $font-weight-2;
+    color: $color-neutral;
+    margin-top: $space-small;
+    margin-bottom: $space-small;
+
+    @media screen and (min-width: 768px){
+        font-size: $font-size-3;
+    }
+}
+
+#dogScore{
+    color: $color-primary;
+
+    @media screen and (min-width: 768px){
+            font-size: $font-size-1;
+        }
+}
+
+#dogProfileDescription{
+    margin-top: $space-small;
+    margin-bottom: $space-medium;
+    color: $color-neutral;
+
+    @media screen and (min-width: 768px){
+            font-size: $font-size-1;
+            max-width: 600px;
+        }
+}
+
+#btn-delete-dog{
+    color: white;
+    background-color: $color-warning;
+    border-radius: $border-radius-small;
+    margin-top: $space-small;
+    
+}
+
+#btn-dog-profile-ok{
+    margin-top: $space-large;
+    color: white !important;
+    background-color: $color-secondary;
+}
+
+#btn-apply-to-adopt{
+    margin-top: $space-small;
+}

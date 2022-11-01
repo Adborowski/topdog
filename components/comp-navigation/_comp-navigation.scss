@@ -1,0 +1,113 @@
+// this is just called "Desktop" but it's universal, also for mobile
+#navigationDesktop{
+    width: 100vw;
+    background-color: $color-primary;
+    padding: $space-small;
+    // padding-left: $space-medium;
+    // padding-right: $space-medium;
+    height: $space-navbar-height;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: $space-small;
+    display: grid;
+    position: relative;
+    z-index: 400;    
+
+    @media screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px){
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+.moduleNavDesktop{
+
+    align-self: center;
+
+    // the box which says "Welcome, USERNAME"
+    .navInfoBox{
+
+        display: block;
+        font-size: $font-size-1;
+    }
+
+    // buttons in the desktop-only navigation
+    .btn{
+
+        display: none;
+
+        @media screen and (min-width: 1000px){
+
+            display:flex;
+    
+        }
+    }
+}
+
+#btnBurger{
+    height: $space-navbar-height;
+    width: $space-navbar-height;
+    border-radius: $border-radius-large;
+    position: absolute;
+    z-index: 450;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    color: $color-secondary;  // for inheritance
+
+    @media screen and (min-width: 1000px){
+        display: none;
+    }
+
+    #burgerIcon{
+        transition: 0.5s all;
+        color: $color-secondary;
+        font-size: $font-size-3;
+        text-align: center;
+    }
+
+}
+
+#navigationMobile{
+    height: 100vh;
+    width: 100%;
+    transition: 0.5s all;
+    padding: $space-small;
+    // 80 below is 70 for the navbar, and 10 for space small
+    padding-top: 80px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: $space-small;
+    background-color: $color-neutral;
+    // margin-left: $space-small;
+    // margin-right:$space-small;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    top: -100vh;
+
+    @media screen and (min-width: 1000px){
+        display: none;
+    }
+
+    .moduleNavMobile{
+        font-size: $font-size-2;
+    }
+
+    .navInfoBox{
+        background-color: $color-primary-light-1;
+        font-size: $font-size-2;
+    }
+
+    .btn{
+        // background-color: $color-secondary;
+    }
+
+
+}

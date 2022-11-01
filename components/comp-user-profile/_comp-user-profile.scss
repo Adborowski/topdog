@@ -1,0 +1,33 @@
+#frameUserProfileEditor{
+    background-color: $color-secondary;
+    border-radius: $border-radius-large;
+    padding: $space-small;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: $space-small;
+    margin-top: $space-small;
+}
+
+.userProfileModule{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: $space-small;
+    color: $color-neutral;
+
+    .moduleLabel{
+        margin-bottom: $space-micro;
+    }
+
+    input{
+        border-radius: $border-radius-small;
+        outline: 0 !important;
+        border: none !important;
+        padding: $space-micro;
+    }
+}
+
+.userProfileControls{
+    margin-top: $space-medium;
+}
