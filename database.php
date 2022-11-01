@@ -17,7 +17,6 @@ try{
 
 }catch( PDOException $e){
   echo $e->getMessage();
-  print $e->getMessage(); 
   exit();
 }
 
