@@ -6,7 +6,7 @@ try{
 
   $sUserName = 'root';
   $sPassword = 'root';
-  $sConnection = "mysql:host=localhost; dbname=dogs; charset=utf8mb4";
+  $sConnection = "mysql:host=104.248.246.24; dbname=dogs; charset=utf8mb4";
 
   $aOptions = array(
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -16,7 +16,7 @@ try{
   $db = new PDO( $sConnection, $sUserName, $sPassword, $aOptions );
 
 }catch( PDOException $e){
-  echo '{"status":"error","message":"Cannot connect to database X"}';
+  echo $e->getMessage();
   print $e->getMessage(); 
   exit();
 }
