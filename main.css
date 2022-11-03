@@ -922,4 +922,11 @@ a:hover {
   display: none;
 }
 
+.sectionExplainer {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 18px;
+  padding: 0px 12px;
+}
+
 /*# sourceMappingURL=main.css.map */

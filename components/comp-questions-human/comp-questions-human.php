@@ -2,6 +2,10 @@
     Your answers
 </div>
 
+<div class="sectionExplainer">
+<span> These answers will determine which dog in our system is the best one for you. Dogs have their own set of answers! For example, the first question on the dog side is "Is the dog patient towards children?" </span>
+</div>
+
 <div id="boxQuestionsHuman">
 
     <!-- <div class="questionModule" data-question-id="1">

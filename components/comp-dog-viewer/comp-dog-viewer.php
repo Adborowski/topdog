@@ -2,6 +2,10 @@
     Your top dogs
 </div>
 
+<div class="sectionExplainer">
+    <span>Your top dogs are determined based on the answers you have given to our questionnaire in Your Profile. Try a different set of answers to get a different Top Dog!</span>
+</div>
+
 <div class="" id="dogViewer"> 
 
     <!-- <div class="compFrame dogCard">
